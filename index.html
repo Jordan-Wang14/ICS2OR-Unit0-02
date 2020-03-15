@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+<script>
+window.onclick = myFunction;
+
+function myFunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "DodgerBlue";
+}
+</script>
+<p id="demo" onclick="myFunction()">Click me.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Yes it works!";
+}
+</script>
+<button onclick="document.getElementById('myImage').src='download.jpg'">change to picture 1</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='download.png'">change to picture 2</button>
+    </body>
+</html>
